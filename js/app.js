@@ -74,7 +74,6 @@ function showSongs(json) {
               <h1 class="card-title fs-5">${song.title_short}</h1>
               <h2 class="card-subtitle fs-6 ${song.explicit_lyrics ? '' : 'mb-3'}">by ${song.artist.name}</h2>
               ${song.explicit_lyrics ? '<span class="badge text-bg-warning mb-3">Explicit Lyrics</span>' : ''}
-              ${song.preview ? '<audio controls><source src="' + song.preview + '" type="audio/mpeg">Your browser does not support the audio element.</audio>' : ''}
             </div>
             <div class="card-body">
               <a href="#" data-artist="${song.artist.name}" data-song="${song.title_short}" class="card-link view-lyrics">View Lyrics</a>
