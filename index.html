@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Simple Movie Search">
+    <meta property="og:description" content="Search for songs by music artist or song name. Listen to song samples. View Lyrics.">
+    <meta property="og:image" content="img/simple-music-search.png">
+    <meta property="og:locale" content="en_US">
+    <title>Simple Music Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column align-items-center justify-content-center min-vh-100" data-bs-theme="dark">
+    <div class="container mt-3 mb-3">
+      <h1 class="fs-5 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
+          <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+          <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+        </svg>
+        Simple Music Search
+      </h1>
+      <form id="search-form">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="input-group">
+              <input type="text" id="search-term-field" class="form-control form-control-lg" placeholder="Enter artist or song" autofocus>
+              <button type="submit" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="songs-list" class="container"></div>
+
+    <div id="view-lyrics-modal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">View Lyrics</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="view-lyrics-body" class="modal-body">
+            <p>Lyrics go here...</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

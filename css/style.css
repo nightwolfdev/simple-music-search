@@ -1,0 +1,27 @@
+body::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center center;
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+audio {
+  width: 100%;
+}
+
+.card {
+  transition: border-color 0.15s ease-in-out;
+}
+
+.card:hover {
+  border-color: rgb(110,168,254);
+}
