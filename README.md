@@ -2,7 +2,7 @@
 
 ![Simple Music Search](./img/simple-music-search.png)
 
-Search for songs by music artist or song name. Listen to song samples. View Lyrics.
+Search for songs by music artist or song name. View Lyrics.
 
 ## Links
 
